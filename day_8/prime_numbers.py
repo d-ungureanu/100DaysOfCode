@@ -9,6 +9,8 @@ def prime_checker(number):
         print("It's a prime number.")
     else:
         print("It's not a prime number.")
+
+
 # Write your code above this line 👆
 
 # Do NOT change any of the code below👇
