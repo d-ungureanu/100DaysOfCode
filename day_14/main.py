@@ -9,8 +9,7 @@ def clear():
 
 
 def pick_celebrity(list_of_celebrities):
-    random_index = random.randint(0, len(list_of_celebrities) - 1)
-    celebrity = list_of_celebrities[random_index]
+    celebrity = random.choice(list_of_celebrities)
     return celebrity
 
 
