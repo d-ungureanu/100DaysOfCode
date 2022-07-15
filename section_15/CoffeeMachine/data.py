@@ -3,7 +3,6 @@ MENU = {
         "ingredients": {
             "water": 50,
             "coffee": 18,
-            "milk": 0
         },
         "cost": 1.5,
     },
