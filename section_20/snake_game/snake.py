@@ -14,13 +14,19 @@ class Snake:
         self.body_segments = []
 
         for position in STARTING_POSITIONS:
-            new_segment = Turtle(shape="square")
-            new_segment.penup()
-            new_segment.color("white")
-            new_segment.goto(position)
-            self.body_segments.append(new_segment)
+            self.add_segment(position)
 
         self.head = self.body_segments[0]
+
+    def add_segment(self, position):
+        new_segment = Turtle(shape="square")
+        new_segment.penup()
+        new_segment.color("white")
+        new_segment.goto(position)
+        self.body_segments.append(new_segment)
+
+    def extend_body(self):
+        self.add_segment(self.body_segments[-1].position())
 
     def move(self):
         for segment_number in range(len(self.body_segments) - 1, 0, -1):
